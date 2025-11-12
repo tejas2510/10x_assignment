@@ -90,11 +90,6 @@ The **normal angle** is computed between the plane normal and the camera optical
 
 ---
 
-## Technologies  
-**Python**, **NumPy**, **OpenCV**, **SciPy**, **SQLite3**
-
----
-
 ## Output  
 
 ### Per-Frame Results  
