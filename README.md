@@ -12,15 +12,11 @@
 Using pinhole camera geometry, each depth map is projected into 3D coordinates.  
 Focal lengths are computed from the horizontal field of view (60°):  
 
-\[
-f_x = \frac{W}{2 \tan(\text{FOV}/2)}, \quad f_y = \frac{H}{2 \tan(\text{FOV}/2)}
-\]
+$$ f_x = \frac{W}{2 \tan(\text{FOV}/2)}, \quad f_y = \frac{H}{2 \tan(\text{FOV}/2)} $$
 
 Each pixel \((u, v)\) is mapped to 3D space as:  
 
-\[
-x = (u - c_x) \frac{z}{f_x}, \quad y = (v - c_y) \frac{z}{f_y}
-\]
+$$ x = (u - c_x) \frac{z}{f_x}, \quad y = (v - c_y) \frac{z}{f_y} $$
 
 ---
 
@@ -34,9 +30,7 @@ x = (u - c_x) \frac{z}{f_x}, \quad y = (v - c_y) \frac{z}{f_y}
 - Iterative RANSAC is applied to extract planar surfaces from 3D points.  
 - Each plane is represented as:  
 
-\[
-n \cdot x + d = 0
-\]
+$$ n \cdot x + d = 0 $$
 
 where **n** is the unit normal vector.  
 - Plane normals are refined using **PCA** on inliers.  
