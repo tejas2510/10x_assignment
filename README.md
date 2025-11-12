@@ -1,4 +1,4 @@
-# Cuboid Rotation Estimator  
+# Take Home Assigment
 ---
 
 ## 1. Depth Data Extraction  
