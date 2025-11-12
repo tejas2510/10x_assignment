@@ -50,9 +50,7 @@ For each detected plane:
 - The 3D area of the planar hull is computed by projecting points onto two principal basis vectors \((b_1, b_2)\).  
 - The **shoelace formula** is then applied on the 2D projection:  
 
-\[
-A = \frac{1}{2} \left| \sum_{i=1}^{n} (x_i y_{i+1} - y_i x_{i+1}) \right|
-\]
+$$ A = \frac{1}{2} \left| \sum_{i=1}^{n} (x_i y_{i+1} - y_i x_{i+1}) \right| $$
 
 ---
 
@@ -70,9 +68,7 @@ The plane with the highest score is selected as the **dominant visible face**.
 ## 8. Normal Angle Estimation  
 The **normal angle** is computed between the plane normal and the camera optical axis:  
 
-\[
-\theta = \cos^{-1}(-n_z)
-\]
+$$ \theta = \cos^{-1}(-n_z) $$
 
 ---
 
